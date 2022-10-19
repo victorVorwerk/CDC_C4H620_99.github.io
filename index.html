@@ -13,12 +13,12 @@
       &nbsp;&nbsp;|&nbsp;&nbsp;<a href="#" onclick="logout();">Logout</a>
       </span>
       <script type="text/javascript" lang="javascript">
-      // calls logout and then hides the logout link if the logout succeeds function logout() {
-      gigya.accounts.logout({callback:function (response) { if (response.errorCode == 0) {
-      document.getElementById("logout").hidden=true; }
-      else {
-      alert('Error:' + response.errorMessage);
-      } }});
-      } </script>
+         // calls logout and then hides the logout link if the logout succeeds function logout() {
+         gigya.accounts.logout({callback:function (response) { if (response.errorCode == 0) {
+         document.getElementById("logout").hidden=true; }
+         else {
+         alert('Error:' + response.errorMessage);
+         } }});
+      </script>
    </body>
 </html>
